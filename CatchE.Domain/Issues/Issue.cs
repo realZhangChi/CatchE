@@ -1,7 +1,7 @@
 ﻿using Volo.Abp;
 using Volo.Abp.Domain.Entities.Auditing;
 
-namespace CatchE;
+namespace CatchE.Issues;
 
 public class Issue : FullAuditedAggregateRoot<Guid>
 {
@@ -20,7 +20,7 @@ public class Issue : FullAuditedAggregateRoot<Guid>
 
     }
 
-    public Issue(
+    internal Issue(
         Guid id,
         string title,
         string description) : base(id)
