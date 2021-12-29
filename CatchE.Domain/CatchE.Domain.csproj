@@ -8,11 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="5.0.0" />
+    <Folder Include="Answerers\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Answerers\" />
+    <PackageReference Include="Volo.Abp.Identity.Domain" Version="5.0.1" />
   </ItemGroup>
 
 </Project>

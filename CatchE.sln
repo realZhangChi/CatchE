@@ -5,7 +5,9 @@ VisualStudioVersion = 17.1.31911.260
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatchE", "CatchE.HttpApi.Host\CatchE.csproj", "{0FFD272B-49F1-422E-80CD-E38886E69717}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatchE.Domain", "CatchE.Domain\CatchE.Domain.csproj", "{2FB8F5AE-113E-4F28-8DE4-59DD87E0BECB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatchE.Domain", "CatchE.Domain\CatchE.Domain.csproj", "{2FB8F5AE-113E-4F28-8DE4-59DD87E0BECB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatchE.Application", "CatchE.Application\CatchE.Application.csproj", "{C0F425E4-A472-46D0-A916-7E7A4A1992AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{2FB8F5AE-113E-4F28-8DE4-59DD87E0BECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FB8F5AE-113E-4F28-8DE4-59DD87E0BECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FB8F5AE-113E-4F28-8DE4-59DD87E0BECB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0F425E4-A472-46D0-A916-7E7A4A1992AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0F425E4-A472-46D0-A916-7E7A4A1992AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0F425E4-A472-46D0-A916-7E7A4A1992AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0F425E4-A472-46D0-A916-7E7A4A1992AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

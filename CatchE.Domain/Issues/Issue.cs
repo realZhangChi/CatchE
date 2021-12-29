@@ -1,4 +1,6 @@
-﻿using Volo.Abp;
+﻿using CatchE.Answerers;
+
+using Volo.Abp;
 using Volo.Abp.Domain.Entities.Auditing;
 
 namespace CatchE.Issues;
@@ -29,14 +31,14 @@ public class Issue : FullAuditedAggregateRoot<Guid>
         Description = Check.NotNullOrWhiteSpace(description, nameof(description));
     }
 
-    public Issue AssignTo(Guid answererId)
+    public Issue AssignTo(Answerer answerer)
     {
         if (AnswererId.HasValue)
         {
             throw new BusinessException(message: "不可重复指派");
         }
 
-        AnswererId = answererId;
+        AnswererId = answerer.Id;
         return this;
     }
 
