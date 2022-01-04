@@ -1,6 +1,6 @@
 ﻿using Volo.Abp.Application.Dtos;
 
-namespace CatchE;
+namespace CatchException;
 
 public class IssueDto : EntityDto<Guid>
 {

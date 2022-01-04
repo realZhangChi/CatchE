@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace CatchE;
+namespace CatchException;
 
 public class CreateIssueDto
 {

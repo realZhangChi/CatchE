@@ -1,9 +1,9 @@
-﻿using Volo.Abp.AspNetCore.Mvc;
+﻿using Volo.Abp;
+using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.Autofac;
 using Volo.Abp.Modularity;
-using Volo.Abp;
 
-namespace CatchE;
+namespace CatchException;
 
 [DependsOn(
     typeof(AbpAutofacModule),

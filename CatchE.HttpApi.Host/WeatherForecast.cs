@@ -1,4 +1,4 @@
-namespace CatchE;
+namespace CatchException;
 
 public class WeatherForecast
 {

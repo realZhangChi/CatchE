@@ -2,7 +2,7 @@
 using Volo.Abp.AutoMapper;
 using Volo.Abp.Modularity;
 
-namespace CatchE;
+namespace CatchException;
 
 [DependsOn(
     typeof(AbpDddApplicationModule),

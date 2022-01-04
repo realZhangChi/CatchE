@@ -1,8 +1,7 @@
 ﻿using AutoMapper;
+using CatchException.Issues;
 
-using CatchE.Issues;
-
-namespace CatchE;
+namespace CatchException;
 
 public class CatchEApplicationAutoMapperProfile : Profile
 {

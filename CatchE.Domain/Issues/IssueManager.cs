@@ -1,11 +1,10 @@
-﻿using CatchE.Answerers;
-
+﻿using CatchException.Answerers;
 using Volo.Abp;
 using Volo.Abp.Domain.Repositories;
 using Volo.Abp.Domain.Services;
 using Volo.Abp.Identity;
 
-namespace CatchE.Issues;
+namespace CatchException.Issues;
 
 public class IssueManager : DomainService
 {

@@ -1,8 +1,7 @@
-﻿using Volo.Abp.Domain;
-using Volo.Abp.Identity;
+﻿using Volo.Abp.Identity;
 using Volo.Abp.Modularity;
 
-namespace CatchE;
+namespace CatchException;
 
 [DependsOn(
     typeof(AbpIdentityDomainModule))]

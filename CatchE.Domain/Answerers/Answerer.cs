@@ -1,6 +1,6 @@
 ﻿using Volo.Abp.Domain.Entities.Auditing;
 
-namespace CatchE.Answerers;
+namespace CatchException.Answerers;
 
 public class Answerer : FullAuditedAggregateRoot<Guid>
 {

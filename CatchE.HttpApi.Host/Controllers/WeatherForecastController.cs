@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace CatchE.Controllers;
+namespace CatchException.Controllers;
 
 [ApiController]
 [Route("[controller]")]

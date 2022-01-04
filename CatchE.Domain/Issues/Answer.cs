@@ -1,7 +1,7 @@
 ﻿using Volo.Abp;
 using Volo.Abp.Domain.Entities.Auditing;
 
-namespace CatchE.Issues;
+namespace CatchException.Issues;
 
 public class Answer : AuditedEntity<Guid>
 {

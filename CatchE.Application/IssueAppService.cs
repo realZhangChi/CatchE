@@ -1,9 +1,8 @@
-﻿using CatchE.Issues;
-
+﻿using CatchException.Issues;
 using Volo.Abp.Application.Services;
 using Volo.Abp.Domain.Repositories;
 
-namespace CatchE;
+namespace CatchException;
 
 public class IssueAppService : ApplicationService, IIssueAppService
 {

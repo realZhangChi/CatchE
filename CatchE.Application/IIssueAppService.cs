@@ -1,6 +1,6 @@
 ﻿using Volo.Abp.Application.Services;
 
-namespace CatchE;
+namespace CatchException;
 
 public interface IIssueAppService : IApplicationService
 {

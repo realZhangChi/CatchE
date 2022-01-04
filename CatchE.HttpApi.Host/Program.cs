@@ -1,4 +1,4 @@
-using CatchE;
+using CatchException;
 using Serilog;
 
 try
