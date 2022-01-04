@@ -7,13 +7,13 @@ namespace CatchException;
 [DependsOn(
     typeof(AbpDddApplicationModule),
     typeof(CatchEDomainModule))]
-public class CatchEApplicationModule : AbpModule
+public class CatchExceptionApplicationModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)
     {
         Configure<AbpAutoMapperOptions>(options =>
         {
-            options.AddMaps<CatchEApplicationModule>();
+            options.AddMaps<CatchExceptionApplicationModule>();
         });
     }
 }
