@@ -5,5 +5,5 @@ namespace CatchException;
 
 [DependsOn(
     typeof(AbpIdentityDomainModule))]
-public class CatchEDomainModule : AbpModule
+public class CatchExceptionDomainModule : AbpModule
 { }

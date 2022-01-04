@@ -6,7 +6,7 @@ namespace CatchException;
 
 [DependsOn(
     typeof(AbpDddApplicationModule),
-    typeof(CatchEDomainModule))]
+    typeof(CatchExceptionDomainModule))]
 public class CatchExceptionApplicationModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)

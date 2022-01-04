@@ -9,7 +9,7 @@ namespace CatchException;
     typeof(AbpAutofacModule),
     typeof(AbpAspNetCoreMvcModule),
     typeof(CatchExceptionHttpApiModule))]
-public class CatchEModule : AbpModule
+public class CatchExceptionHttpApiHostModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)
     {

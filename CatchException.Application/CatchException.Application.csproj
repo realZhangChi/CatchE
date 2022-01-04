@@ -12,7 +12,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\CatchE.Domain\CatchE.Domain.csproj" />
+	  <ProjectReference Include="..\CatchException.Domain\CatchException.Domain.csproj" />
 	</ItemGroup>
 
 </Project>

@@ -3,9 +3,9 @@ using CatchException.Issues;
 
 namespace CatchException;
 
-public class CatchEApplicationAutoMapperProfile : Profile
+public class CatchExceptionApplicationAutoMapperProfile : Profile
 {
-    public CatchEApplicationAutoMapperProfile()
+    public CatchExceptionApplicationAutoMapperProfile()
     {
         CreateMap<Issue, IssueDto>();
     }
