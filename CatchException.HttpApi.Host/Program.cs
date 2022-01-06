@@ -9,7 +9,7 @@ try
 #if DEBUG
         .MinimumLevel.Debug()
 #else
-                .MinimumLevel.Information()
+        .MinimumLevel.Information()
 #endif
         .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
         .Enrich.FromLogContext()

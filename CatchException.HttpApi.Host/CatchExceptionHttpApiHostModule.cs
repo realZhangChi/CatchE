@@ -1,14 +1,19 @@
-﻿using Volo.Abp;
+﻿using CatchException.EntityFrameworkCore;
+
+using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.Autofac;
 using Volo.Abp.Modularity;
+using Volo.Abp.Swashbuckle;
 
 namespace CatchException;
 
 [DependsOn(
     typeof(AbpAutofacModule),
     typeof(AbpAspNetCoreMvcModule),
-    typeof(CatchExceptionHttpApiModule))]
+    typeof(AbpSwashbuckleModule),
+    typeof(CatchExceptionHttpApiModule),
+    typeof(CatchExceptionEntityFrameworkCoreModule))]
 public class CatchExceptionHttpApiHostModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)
@@ -20,19 +25,25 @@ public class CatchExceptionHttpApiHostModule : AbpModule
     {
         var app = context.GetApplicationBuilder();
         var env = context.GetEnvironment();
-
+        
+        app.UseStaticFiles();
         app.UseRouting();
         if (env.IsDevelopment())
         {
             app.UseSwagger();
-            app.UseSwaggerUI();
+            app.UseAbpSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "CatchException API");
+            });
         }
+
+        app.UseUnitOfWork();
         app.UseConfiguredEndpoints();
     }
 
 
     private static void ConfigureSwaggerServices(ServiceConfigurationContext context)
     {
-        context.Services.AddSwaggerGen();
+        context.Services.AddAbpSwaggerGen();
     }
 }
